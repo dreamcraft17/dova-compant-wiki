@@ -9,14 +9,14 @@
 **UpdatedAt**: July 25, 2026  
 **App HEAD**: `27db4da`  
 
-**Canonical wiki:** `dova-company-wiki/` (this repo)  
-**Mirrors:** `company-wiki/docs/products/dova/` · `dova/docs/` (local, gitignored)
+**Canonical wiki:** workspace folder `dova-company-wiki/`  
+**Mirrors:** this path (`company-wiki/docs/products/dova/`) · `dova/docs/` (local, gitignored)
 
 > **Start here:** [current-phase.md](./current-phase.md)  
 > **BD:** [docs/PHASE-UPDATE-BD.md](./docs/PHASE-UPDATE-BD.md) · **CEO:** [docs/CEO-PROGRESS-UPDATE.md](./docs/CEO-PROGRESS-UPDATE.md)  
 > **Baseline:** [docs/CURRENT-IMPLEMENTATION.md](./docs/CURRENT-IMPLEMENTATION.md)  
 > **Specs:** [PRD/](./PRD/)  
-> **Sync:** [SYNC.md](./SYNC.md) · `./scripts/sync-docs.sh`
+> **Sync:** from workspace root → `./dova-company-wiki/scripts/sync-docs.sh`
 
 ---
 
@@ -61,8 +61,8 @@
 
 ## Notes
 
-- **Canonical:** this `dova-company-wiki` folder.  
-- After edits, run `./scripts/sync-docs.sh` so `company-wiki` and `dova/docs` stay aligned.  
+- **Canonical:** workspace `dova-company-wiki/` (own git repo).  
+- **This folder / company-wiki path:** mirror — keep in sync with `./dova-company-wiki/scripts/sync-docs.sh`.  
 - App repo `dova/docs/` stays **gitignored**; do not rely on it as the shared source of truth.
 
 ## Quick links
