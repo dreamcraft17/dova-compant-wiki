@@ -1,7 +1,7 @@
 # DOVA — Feature Catalog
 
-**UpdatedAt:** July 24, 2026  
-**Snapshot:** MVP codebase 100% complete · ops launch Conditional  
+**UpdatedAt:** July 31, 2026  
+**Snapshot:** MVP codebase 100% complete · ops launch Conditional · FeedLog wired (optional)
 **Spec:** Aggressive 4W PRD/SRS/SDD  
 
 ## How to read
@@ -47,6 +47,7 @@
 | Home (Startup hero) | Available | |
 | About / Contact / Footer | Available | Contact persisted |
 | Mobile hamburger | Available | |
+| FeedLog feedback / roadmap links | Conditional | Set `NEXT_PUBLIC_FEEDLOG_URL`; sibling Nuxt app |
 
 ## Out of MVP
 

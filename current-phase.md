@@ -4,8 +4,8 @@
 |---|---|
 | **Product** | DOVA — food supply marketplace (Nigeria / NGN / Paystack) |
 | **Repository** | [`dreamcraft17/dova`](https://github.com/dreamcraft17/dova) |
-| **HEAD** | `27db4da` |
-| **Document date** | 25 July 2026 |
+| **HEAD** | `6b92a81` |
+| **Document date** | 31 July 2026 |
 | **Owner** | Dozer |
 | **Audience** | Engineering + business stakeholders |
 | **Phase** | **MVP codebase complete → ops / soft-launch readiness** |
@@ -30,7 +30,7 @@ Min order pickup ₦3k / delivery ₦5k
 Product image upload
 Startup UI + mobile-first
 Unit tests + smoke:week4
-```
+FeedLog feedback links (optional sibling app)
 
 ---
 
@@ -74,6 +74,14 @@ Unit tests + smoke:week4
 5. Walk customer → supplier → admin on phone + desktop.  
 6. Complete **≥10** Paystack test txs.  
 7. Soft-launch go/no-go with business owners.
+
+### Local verification (31 Jul 2026)
+
+- [x] Unit tests pass (`npm run test` — 27 unit + auth)
+- [x] FeedLog wiring committed (`NEXT_PUBLIC_FEEDLOG_URL` → nav/footer Feedback)
+- [x] Responsive polish + checkout login modal merged (`6d2cf46`)
+- [ ] `smoke:week4` green with API running (run after `npm run dev`)
+- [ ] FeedLog sibling running on `:3010` with Postgres + pgvector
 
 ### Go / no-go checklist
 
