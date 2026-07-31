@@ -89,18 +89,23 @@ Copy from [current-phase.md](./current-phase.md) — all staging items must be c
 
 ## Local parity (dev machine)
 
+**No Docker on dev machines** — prod/staging also use Node + managed Postgres (Vercel + VPS), not containers.
+
 ```bash
-# Terminal 1 — DOVA
+# Terminal 1 — DOVA (in-memory OK for UI demo)
 cd dova && cp apps/frontend/.env.dev apps/frontend/.env.local
-# Uncomment NEXT_PUBLIC_FEEDLOG_URL=http://localhost:3010 when FeedLog is up
 npm run dev
+npm run smoke:week4   # with API up on :3000
+```
 
-# Terminal 2 — FeedLog DB
-cd feedlog && docker compose up db -p 5433:5432 -d   # or expose 5432 if free
+**FeedLog (optional):** either point at a hosted instance or run FeedLog with a **remote** Postgres 17+ (Neon / Supabase with `vector` extension):
 
-# Terminal 3 — FeedLog app
-cd feedlog && cp .env.example .env   # set BETTER_AUTH_SECRET + SYSTEM_ADMIN_EMAILS
-pnpm install && pnpm migrate && pnpm dev -- --port 3010
+```bash
+# apps/frontend/.env.local — use hosted FeedLog or your own deploy URL
+NEXT_PUBLIC_FEEDLOG_URL=https://feedback.feedlog.ai
+
+# Or self-host FeedLog without local Docker: deploy to Vercel/Cloudflare with Neon DATABASE_URL,
+# then set NEXT_PUBLIC_FEEDLOG_URL to that URL. See ../feedlog/README.md.
 ```
 
 ---

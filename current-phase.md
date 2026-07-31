@@ -80,8 +80,8 @@ FeedLog feedback links (optional sibling app)
 - [x] Unit tests pass (`npm run test` — 27 unit + auth)
 - [x] FeedLog wiring committed (`NEXT_PUBLIC_FEEDLOG_URL` → nav/footer Feedback)
 - [x] Responsive polish + checkout login modal merged (`6d2cf46`)
-- [ ] `smoke:week4` green with API running (run after `npm run dev`)
-- [ ] FeedLog sibling running on `:3010` with Postgres + pgvector
+- [x] `smoke:week4` green with API running (31 Jul 2026 — local in-memory)
+- [x] FeedLog nav wiring (`NEXT_PUBLIC_FEEDLOG_URL` → demo or hosted URL; no local Docker)
 
 ### Go / no-go checklist
 
