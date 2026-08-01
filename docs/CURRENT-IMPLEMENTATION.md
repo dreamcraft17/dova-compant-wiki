@@ -2,8 +2,8 @@
 
 | Metadata | Value |
 |----------|-------|
-| Snapshot date | 31 July 2026 |
-| App HEAD | `6b92a81` |
+| Snapshot date | 1 August 2026 |
+| App HEAD | `66ed52e` |
 | Purpose | Canonical baseline after MVP Week 1–4 complete in code |
 | Spec baseline | Aggressive 4W PRD/SRS/SDD + Vercel deploy override |
 | Owner | Dozer |

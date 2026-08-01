@@ -1,6 +1,6 @@
 # DOVA — Feature Catalog
 
-**UpdatedAt:** July 31, 2026  
+**UpdatedAt:** August 1, 2026  
 **Snapshot:** MVP codebase 100% complete · ops launch Conditional · FeedLog wired (optional)
 **Spec:** Aggressive 4W PRD/SRS/SDD  
 
@@ -17,7 +17,7 @@
 | Feature | Status | Notes |
 |---------|--------|-------|
 | Catalog browse / search / detail | Available | ₦ pricing |
-| Cart | Available | Mobile-first |
+| Cart | Available | Mobile-first; per-item delivery slot (morning/evening) |
 | Checkout pickup / delivery | Available | Min ₦3k / ₦5k |
 | Paystack initialize / verify / webhook | Conditional | Mock without keys |
 | Order history | Available | |

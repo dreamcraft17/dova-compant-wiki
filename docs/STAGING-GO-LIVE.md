@@ -1,7 +1,7 @@
 # DOVA — Staging & Go-Live Checklist
 
 **Last updated:** 31 July 2026  
-**App HEAD:** `6b92a81`  
+**App HEAD:** `66ed52e`  
 **Audience:** Engineering + business
 
 ---
