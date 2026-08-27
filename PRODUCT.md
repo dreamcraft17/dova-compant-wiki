@@ -71,7 +71,7 @@ Sync: `./dova-company-wiki/scripts/sync-docs.sh from-wiki`
 
 ---
 
-## Deployment (VPS staging)
+## Deployment (production VPS)
 
 ```bash
 npm ci && npm run build && npm run db:migrate
