@@ -3,7 +3,7 @@
 **Product**: DOVA — agricultural / food supply marketplace (Nigeria)  
 **Market**: NGN · Paystack  
 **Repository**: [`dreamcraft17/dova`](https://github.com/dreamcraft17/dova)  
-**Status**: MVP complete · **v0.5.2 soft launch** · staging live  
+**Status**: MVP complete · **v0.5.2 production live**  
 **Owner**: Dozer  
 **Company**: DN Tech  
 **UpdatedAt**: August 27, 2026  
@@ -18,8 +18,8 @@
 > **Specs:** [PRD/](./PRD/)  
 > **Sync:** from workspace root → `./dova-company-wiki/scripts/sync-docs.sh`
 
-**Staging:** [dova.dntech.id](https://dova.dntech.id) · API [api.dova.dntech.id](https://api.dova.dntech.id/api/v1/health)  
-**Tests:** 127 unit · staging smoke automated (`npm run smoke:staging`)
+**Production:** [dova.dntech.id](https://dova.dntech.id) · API [api.dova.dntech.id](https://api.dova.dntech.id/api/v1/health)  
+**Tests:** 127 unit · production smoke automated (`npm run smoke:production`)
 
 ---
 
@@ -63,7 +63,7 @@
 
 | File | Topic |
 |------|-------|
-| [current-phase.md](./current-phase.md) | Current phase — staging live, go/no-go |
+| [current-phase.md](./current-phase.md) | Current phase — production live |
 
 ---
 
