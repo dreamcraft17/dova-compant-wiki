@@ -6,8 +6,8 @@
 **Status**: MVP complete · **v0.5.0** · staging live · soft-launch prep  
 **Owner**: Dozer  
 **Company**: DN Tech  
-**UpdatedAt**: August 26, 2026  
-**App HEAD**: `00c8601`  
+**UpdatedAt**: August 27, 2026  
+**App HEAD**: `54c3009`  
 
 **Canonical wiki:** workspace folder `dova-company-wiki/`  
 **Mirrors:** this path (`company-wiki/docs/products/dova/`) · `dova/docs/` (local, gitignored)
@@ -38,6 +38,9 @@
 | [SPEC-COMPLIANCE.md](./docs/SPEC-COMPLIANCE.md) | PRD/SRS/SDD vs code |
 | [API.md](./docs/API.md) | Referensi API MVP |
 | [DOVA-API-QA-POSTMAN.md](./docs/DOVA-API-QA-POSTMAN.md) | **API endpoint list for QA** (Postman / Insomnia) |
+| [DOVA-RELEASE-READINESS-AUDIT.md](./docs/DOVA-RELEASE-READINESS-AUDIT.md) | **Release readiness audit** (~78% — QA + bug triage + backend) |
+| [TEST-CASES.md](./docs/TEST-CASES.md) | Manual UAT / UI test scenarios |
+| [GUIDE.md](./docs/GUIDE.md) | QA testing workflow |
 | [RUNBOOK.md](./docs/RUNBOOK.md) | Deploy, rollback, troubleshoot |
 | [VPS-DEPLOY.md](./docs/VPS-DEPLOY.md) | Deploy single-server |
 | [VERCEL-DEPLOYMENT-OVERRIDE.md](./docs/VERCEL-DEPLOYMENT-OVERRIDE.md) | Override Docker → Vercel/VPS |
@@ -83,4 +86,4 @@
 
 ---
 
-*Last Updated: August 26, 2026*
+*Last Updated: August 27, 2026*

@@ -4,33 +4,33 @@
 |---|---|
 | **Product** | DOVA — food supply marketplace (Nigeria / NGN / Paystack) |
 | **Repository** | [`dreamcraft17/dova`](https://github.com/dreamcraft17/dova) |
-| **HEAD** | `00c8601` · **v0.5.0** |
-| **Document date** | 26 August 2026 |
+| **HEAD** | `54c3009` · **v0.5.0** (soft-launch prep) |
+| **Document date** | 27 August 2026 |
 | **Owner** | Dozer |
 | **Audience** | Engineering + business stakeholders |
 | **Phase** | **Staging live → Paystack live + soft-launch go/no-go** |
 
 > **Full technical status:** [docs/STATUS-LENGKAP.md](./docs/STATUS-LENGKAP.md)  
+> **Release audit:** [docs/DOVA-RELEASE-READINESS-AUDIT.md](./docs/DOVA-RELEASE-READINESS-AUDIT.md) (~78% overall)  
 > **BD / non-tech one-pager:** [docs/PHASE-UPDATE-BD.md](./docs/PHASE-UPDATE-BD.md)
 
 ---
 
 ## One-line status
 
-**MVP codebase complete.** Staging live at [dova.dntech.id](https://dova.dntech.id). **121** unit tests green. Soft launch pending Paystack live proof + business checklist.
+**MVP codebase complete.** Staging live at [dova.dntech.id](https://dova.dntech.id). **121** unit tests green. Login-loop fix shipped (`fc177d6`). Soft launch pending Paystack live proof + manual QA execution.
 
-```
-Done in code + staging              Still open (ops / business)
-─────────────────────────────       ──────────────────────────────
-Auth + roles + Remember Me          Paystack LIVE keys + ≥10 txs
-Catalog / cart / checkout           Soft-launch go/no-go sign-off
-Paystack (mock + test mode wired)   Production domain (`dovachain.com`)
-Supplier + admin dashboards
-Admin user management (v0.5.0)
-Native feedback board
-Staging VPS (PM2) live
-Min order pickup ₦3k / delivery ₦5k
-121 unit tests + CI
+| Done in code + staging | Still open (ops / business) |
+|------------------------|-----------------------------|
+| Auth + roles + Remember Me | Paystack LIVE keys + ≥10 txs |
+| Catalog / cart / checkout | Manual QA (Postman + UI) — not recorded |
+| Paystack (mock + test mode wired) | Soft-launch go/no-go sign-off |
+| Supplier + admin dashboards | Production domain (`dovachain.com`) |
+| Admin user management (v0.5.0) | VPS deploy verify (`fc177d6`+) |
+| Native feedback board | |
+| Staging VPS (PM2) live | |
+| Min order pickup ₦3k / delivery ₦5k | |
+| 121 unit tests + CI | |
 
 ---
 
@@ -65,20 +65,22 @@ Min order pickup ₦3k / delivery ₦5k
 
 ## Current phase — next actions
 
-1. Configure **Paystack live/test** keys + webhook on VPS.  
-2. Run `npm run db:migrate` after deploy (migrations through `006`).  
-3. Run `npm run smoke:week4` against staging API.  
-4. Walk customer → supplier → admin on phone + desktop.  
-5. Complete **≥10** Paystack test txs.  
-6. Soft-launch go/no-go with business owners.
+1. Deploy latest API + web on VPS (`fc177d6` login fix, `54c3009` QA docs).  
+2. Configure **Paystack live/test** keys + webhook on VPS.  
+3. Run `npm run db:migrate` after deploy (migrations through `006`).  
+4. QA runs Postman smoke ([DOVA-API-QA-POSTMAN.md](./docs/DOVA-API-QA-POSTMAN.md)) + UI ([TEST-CASES.md](./docs/TEST-CASES.md)).  
+5. Run `npm run smoke:week4` against staging API — save output.  
+6. Complete **≥10** Paystack test txs.  
+7. Soft-launch go/no-go with business owners.
 
 ### Verified (August 2026)
 
-- [x] Unit tests **121/121** pass (`npm run test:unit`)
+- [x] Unit tests **121/121** pass (`npm run test:unit`) — verified 3× on 2026-08-27
 - [x] Staging live — `dova.dntech.id` + `api.dova.dntech.id`
 - [x] Native feedback board (replaced FeedLog)
 - [x] Admin user management shipped (`52530da`)
 - [x] Supplier approve/reject Postgres fix (`00c8601`)
+- [x] Login loop fix — Bearer over stale cookie (`fc177d6`)
 
 ### Go / no-go checklist
 

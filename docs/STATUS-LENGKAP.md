@@ -1,7 +1,7 @@
 # DOVA — Dokumen Status Lengkap (Teknis)
 
-> **Status:** Active · **Terakhir diperbarui:** 2026-08-26 · **Owner:** Dozer / DN Tech  
-> **Repo:** [dreamcraft17/dova](https://github.com/dreamcraft17/dova) · **HEAD:** `00c8601` · **Release:** v0.5.0
+> **Status:** Active · **Terakhir diperbarui:** 2026-08-27 · **Owner:** Dozer / DN Tech  
+> **Repo:** [dreamcraft17/dova](https://github.com/dreamcraft17/dova) · **HEAD:** `54c3009` · **Release:** v0.5.0
 
 ---
 

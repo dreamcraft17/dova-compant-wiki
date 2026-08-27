@@ -20,6 +20,7 @@ Dedicated documentation wiki for **DOVA** (food supply marketplace).
 | [docs/CEO-PROGRESS-UPDATE.md](./docs/CEO-PROGRESS-UPDATE.md) | CEO update |
 | [docs/PHASE-UPDATE-BD.md](./docs/PHASE-UPDATE-BD.md) | BD / non-tech update |
 | [docs/CURRENT-IMPLEMENTATION.md](./docs/CURRENT-IMPLEMENTATION.md) | Implementation baseline |
+| [docs/DOVA-RELEASE-READINESS-AUDIT.md](./docs/DOVA-RELEASE-READINESS-AUDIT.md) | Release readiness (~78%) |
 | [PRD/](./PRD/) | PRD · SRS · SDD |
 
 ## Three-way sync
@@ -54,4 +55,3 @@ dova-company-wiki/
 ├── PRD/                   ← specs
 └── scripts/sync-docs.sh
 ```
-# dova-compant-wiki
