@@ -74,6 +74,15 @@ App-local docs often use a `DOVA_` prefix. The sync script maps these both ways:
 
 Unmapped files in `dova/docs/` are **left alone** (not deleted) on `from-wiki`.
 
+## Do not put here
+
+Personal / compensation files belong in `company-wiki/docs/products/dova/private/` (not this repo). Sync excludes that folder:
+
+- Equity proposals and counter-proposals (`*EQUITY*`, `*COUNTER-PROPOSAL*`)
+- Launch budget drafts that mix infra cost with personal terms (`DOVA-LAUNCH-BUDGET*`)
+
+`.gitignore` in this repo already blocks those patterns.
+
 ## Rule of thumb
 
 - **Publishing / sharing with BD or CEO** → edit in `dova-company-wiki`, sync, then push wiki repos.  

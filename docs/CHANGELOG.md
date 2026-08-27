@@ -2,10 +2,95 @@
 
 All notable changes to the DOVA marketplace project.
 
+## [Unreleased]
+
+> **Author:** Dozer
+
+_No code changes since `v0.5.3`._
+
+---
+
+## [0.5.3] — 2026-08-27
+
+> **Author:** Dozer  
+> **Range:** after `v0.5.2` → `dcb5c2f` · **SemVer bump:** `patch` · **Conventional lint:** 3/3 valid (docs only)
+
+### Changed
+- **Production terminology** — docs and README now label `dova.dntech.id` as **production**, not staging (`3e91759`, `dcb5c2f`).
+- **Release audit** — production sign-off and smoke result docs updated (`37bc795`).
+
+### Commit index (audit)
+
+| Hash | Message |
+|------|---------|
+| `37bc795` | docs: soft launch sign-off audit and staging smoke result. |
+| `3e91759` | docs: reframe dova.dntech.id as production, not staging. |
+| `dcb5c2f` | docs: finish production wording in README env and deploy sections. |
+
+**Tag command:** `git tag -a v0.5.3 -m 'Production docs v0.5.3' && git push origin v0.5.3`
+
+---
+
+## [0.5.2] — 2026-08-27
+
+> **Author:** Dozer  
+> **Range:** after `v0.5.1` → `b17e2a5` · **SemVer bump:** `minor` · **Conventional lint:** 1/1 valid in tag range
+
+### Added
+- **`npm run smoke:production`** — automated 23-step API smoke + NEG-01..07 against production (`scripts/smoke-staging-api.js`; alias `smoke:staging` kept).
+- **JWT guard tests** — Bearer token preferred over stale cookie (`jwt-auth.guard.spec.ts`).
+- **`setSupplierStatus` DB tests** — varchar cast regression coverage.
+
+### Fixed
+- **GET `/products/:id`** — invalid UUID returns **404** instead of **500** (Postgres error).
+
+### Verified (production)
+- 127 unit tests green · full API smoke pass · VPS @ `v0.5.2` · Paystack `mode: paystack`
+
+### Commit index (audit)
+
+| Hash | Message |
+|------|---------|
+| `b17e2a5` | feat: soft launch gates — staging smoke script, UUID fix, guard tests. |
+
+**Tag command:** `git tag -a v0.5.2 -m 'Production v0.5.2' && git push origin v0.5.2`
+
+---
+
+## [0.5.1] — 2026-08-27
+
+> **Author:** Dozer  
+> **Range:** after `v0.5.0` → `7553e83` · **SemVer bump:** `patch` · **Conventional lint:** 2/6 valid — sections manually curated
+
+### Added
+- **Release readiness audit** — combined QA, bug triage, and backend review (`tests/DOVA-RELEASE-READINESS-AUDIT.md`).
+- **QA Postman guide** — 67-endpoint checklist for manual API smoke (`tests/DOVA-API-QA-POSTMAN.md`) (`4eca2d7`, `5fe0640`).
+
+### Fixed
+- **Supplier approve/reject** — Postgres `42P08` type coercion on `setSupplierStatus` (`bbbb1ff`).
+- **Production login loop** — stale API cookie overrode fresh Bearer token on `/auth/me`; guard prefers Authorization header (`1d7e77e`).
+
+### Docs
+- Removed internal stakeholder / duplicate status docs from app repo (canonical copies live in `dova-company-wiki/`).
+
+### Commit index (audit)
+
+| Hash | Message |
+|------|---------|
+| `7553e83` | docs: add release readiness audit and changelog for v0.5.1. |
+| `5fe0640` | Rewrite QA Postman endpoint guide in English. |
+| `4eca2d7` | Add QA Postman endpoint checklist for manual API testing. |
+| `1d7e77e` | Fix staging login loop when stale API cookies override Bearer tokens. |
+| `bbbb1ff` | Fix supplier approve/reject failing on Postgres type coercion. |
+
+**Tag command:** `git tag -a v0.5.1 -m 'Release v0.5.1' && git push origin v0.5.1`
+
+---
+
 ## [0.5.0] — 2026-08-26
 
 > **Author:** Dozer  
-> **Range:** after `v0.4.0` → `00c8601` · **Commits:** 9 · **SemVer bump:** `minor`
+> **Range:** after `v0.4.0` → `52530da` · **Commits:** 6 · **SemVer bump:** `minor` · **Conventional lint:** 0/6 valid — sections below are manually curated from git history.
 
 ### Added
 - **Admin user management** — view user detail, edit name/email/phone, change role, reset password, activate/deactivate; self-lockout guards prevent admins from demoting or deactivating themselves (`52530da`).
@@ -18,8 +103,6 @@ All notable changes to the DOVA marketplace project.
 
 ### Fixed
 - **Purchase history crash** — Postgres `NUMERIC` quantity returned as string broke `.toFixed()` on `/customer/history` (`85c2765`).
-- **Supplier approve/reject** — Postgres `42P08` when reusing `$1` in `CASE` vs `verification_status` column; cast `$1::varchar` (`00c8601`).
-- **Admin user modal** — overlay/card rendering on admin users tab (`00dc487`).
 
 ### Deploy notes
 - Run `npm run db:migrate` on VPS after pull (migrations `004`, `005`, `006`).
@@ -29,9 +112,6 @@ All notable changes to the DOVA marketplace project.
 
 | Hash | Message |
 |------|---------|
-| `00c8601` | Fix supplier approve/reject failing on Postgres type coercion. |
-| `00dc487` | Fix admin user modal rendering as a proper overlay card. |
-| `6f4577f` | Add release notes for v0.5.0. |
 | `52530da` | Add full admin user management beyond activate/deactivate. |
 | `7bafb35` | Scaffold email OTP verification but keep standard registration. |
 | `85c2765` | Fix purchase history crash when order quantity is a string from Postgres. |

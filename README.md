@@ -43,6 +43,12 @@ Docs should stay aligned across:
 
 Details: [SYNC.md](./SYNC.md).
 
+## Sharing this repo
+
+This wiki is **team-shareable** (product, QA, PRD, runbooks).
+
+Compensation, equity, and personal negotiation docs are **not** in this repo. They live in DN Tech `company-wiki/docs/products/dova/private/`.
+
 ## Layout
 
 ```

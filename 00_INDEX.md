@@ -7,7 +7,7 @@
 **Owner**: Dozer  
 **Company**: DN Tech  
 **UpdatedAt**: August 27, 2026  
-**App HEAD**: `b17e2a5`  
+**App HEAD**: `dcb5c2f` · **Tag:** `v0.5.2`  
 
 **Canonical wiki:** workspace folder `dova-company-wiki/`  
 **Mirrors:** this path (`company-wiki/docs/products/dova/`) · `dova/docs/` (local, gitignored)
@@ -38,7 +38,8 @@
 | [SPEC-COMPLIANCE.md](./docs/SPEC-COMPLIANCE.md) | PRD/SRS/SDD vs code |
 | [API.md](./docs/API.md) | Referensi API MVP |
 | [DOVA-API-QA-POSTMAN.md](./docs/DOVA-API-QA-POSTMAN.md) | **API endpoint list for QA** (Postman / Insomnia) |
-| [DOVA-RELEASE-READINESS-AUDIT.md](./docs/DOVA-RELEASE-READINESS-AUDIT.md) | **Release readiness audit** (~78% — QA + bug triage + backend) |
+| [DOVA-RELEASE-READINESS-AUDIT.md](./docs/DOVA-RELEASE-READINESS-AUDIT.md) | **Release audit** — 100% production |
+| [SMOKE-PRODUCTION-RESULT.md](./docs/SMOKE-PRODUCTION-RESULT.md) | Production API smoke pass log |
 | [TEST-CASES.md](./docs/TEST-CASES.md) | Manual UAT / UI test scenarios |
 | [GUIDE.md](./docs/GUIDE.md) | QA testing workflow |
 | [RUNBOOK.md](./docs/RUNBOOK.md) | Deploy, rollback, troubleshoot |
@@ -78,7 +79,7 @@
 | | |
 |---|---|
 | GitHub app | https://github.com/dreamcraft17/dova |
-| Staging | https://dova.dntech.id |
+| **Production** | https://dova.dntech.id |
 | API health | https://api.dova.dntech.id/api/v1/health |
 | Local frontend | http://localhost:3001 |
 | Demo admin | `admin@dova.local` / `admin1234` |
