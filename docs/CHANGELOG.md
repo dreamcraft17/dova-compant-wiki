@@ -6,7 +6,32 @@ All notable changes to the DOVA marketplace project.
 
 > **Author:** Dozer
 
-_No code changes since `v0.5.3`._
+_No code changes since `v0.5.4`._
+
+---
+
+## [0.5.4] — 2026-08-27
+
+> **Author:** Dozer  
+> **SemVer bump:** `minor` · Email verification required for new customers on production
+
+### Added
+- **Email OTP verification (production)** — register creates pending account; `/auth/verify-otp` and `/auth/resend-otp` enabled; Resend sends 6-digit code (`RESEND_API_KEY` + `EMAIL_FROM` required on VPS).
+- **Production smoke OTP path** — register → login blocked → verify-otp → customer journey (`DOVA_QA_FIXED_OTP` + `SMOKE_OTP_CODE` for `qa.softlaunch.*` emails).
+- **132 unit tests** — OTP register/verify coverage + `verificationOtp` notification tests.
+
+### Changed
+- **Frontend** — register redirects to `/auth/verify-email`; verification is mandatory (no skip).
+- **`scripts/smoke-production-api.js`** — renamed from `smoke-staging-api.js`; log file `smoke-production-latest.log`.
+- **Production guard** — signup rejected when Resend is not configured (except QA smoke email pattern).
+
+### Production env (required for customer signup)
+
+```env
+RESEND_API_KEY=re_...
+EMAIL_FROM=DOVA <noreply@dova.dntech.id>
+DOVA_QA_FIXED_OTP=123456   # optional — automated smoke only
+```
 
 ---
 
