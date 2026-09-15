@@ -4,7 +4,7 @@ All notable changes to the DOVA marketplace project.
 
 ## [Unreleased]
 
-> **Author:** Dozer
+> **Author:** Dozer · [@dreamcraft17](https://github.com/dreamcraft17)
 
 _No code changes since `v0.5.4`._
 
@@ -12,7 +12,7 @@ _No code changes since `v0.5.4`._
 
 ## [0.5.4] — 2026-08-27
 
-> **Author:** Dozer  
+> **Author:** Dozer · [@dreamcraft17](https://github.com/dreamcraft17)  
 > **SemVer bump:** `minor` · Email verification required for new customers on production
 
 ### Added
@@ -37,7 +37,7 @@ DOVA_QA_FIXED_OTP=123456   # optional — automated smoke only
 
 ## [0.5.3] — 2026-08-27
 
-> **Author:** Dozer  
+> **Author:** Dozer · [@dreamcraft17](https://github.com/dreamcraft17)  
 > **Range:** after `v0.5.2` → `dcb5c2f` · **SemVer bump:** `patch` · **Conventional lint:** 3/3 valid (docs only)
 
 ### Changed
@@ -58,7 +58,7 @@ DOVA_QA_FIXED_OTP=123456   # optional — automated smoke only
 
 ## [0.5.2] — 2026-08-27
 
-> **Author:** Dozer  
+> **Author:** Dozer · [@dreamcraft17](https://github.com/dreamcraft17)  
 > **Range:** after `v0.5.1` → `b17e2a5` · **SemVer bump:** `minor` · **Conventional lint:** 1/1 valid in tag range
 
 ### Added
@@ -84,7 +84,7 @@ DOVA_QA_FIXED_OTP=123456   # optional — automated smoke only
 
 ## [0.5.1] — 2026-08-27
 
-> **Author:** Dozer  
+> **Author:** Dozer · [@dreamcraft17](https://github.com/dreamcraft17)  
 > **Range:** after `v0.5.0` → `7553e83` · **SemVer bump:** `patch` · **Conventional lint:** 2/6 valid — sections manually curated
 
 ### Added
@@ -114,7 +114,7 @@ DOVA_QA_FIXED_OTP=123456   # optional — automated smoke only
 
 ## [0.5.0] — 2026-08-26
 
-> **Author:** Dozer  
+> **Author:** Dozer · [@dreamcraft17](https://github.com/dreamcraft17)  
 > **Range:** after `v0.4.0` → `52530da` · **Commits:** 6 · **SemVer bump:** `minor` · **Conventional lint:** 0/6 valid — sections below are manually curated from git history.
 
 ### Added

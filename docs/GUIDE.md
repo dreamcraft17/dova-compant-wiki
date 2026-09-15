@@ -1,6 +1,6 @@
 # DOVA — QA Testing Guide
 
-**Author:** Dozer (@dreamraft17) - Software Engineer  
+**Author:** Dozer · [@dreamcraft17](https://github.com/dreamcraft17)  
 **Audience:** QA Tester  
 **Updated:** August 2026  
 **Related docs:** [TEST-CASES.md](./TEST-CASES.md) · [DOVA-BUG-TRIAGE.md](./DOVA-BUG-TRIAGE.md) · [Readme.md](../Readme.md)

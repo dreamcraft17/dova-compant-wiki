@@ -76,7 +76,9 @@ Unmapped files in `dova/docs/` are **left alone** (not deleted) on `from-wiki`.
 
 ## Do not put here
 
-Personal / compensation files belong in `company-wiki/docs/products/dova/private/` (not this repo). Sync excludes that folder:
+Personal, compensation, and equity documents **never** belong in `dova-company-wiki`. Keep them outside this repo entirely.
+
+Sync excludes patterns that match personal negotiation or compensation drafts:
 
 - Equity proposals and counter-proposals (`*EQUITY*`, `*COUNTER-PROPOSAL*`)
 - Launch budget drafts that mix infra cost with personal terms (`DOVA-LAUNCH-BUDGET*`)

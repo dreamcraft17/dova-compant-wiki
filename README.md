@@ -5,7 +5,7 @@ Dedicated documentation wiki for **DOVA** (food supply marketplace).
 | | |
 |---|---|
 | **Product** | DOVA |
-| **Owner** | Dozer · DN Tech |
+| **Author** | Dozer · [@dreamcraft17](https://github.com/dreamcraft17) |
 | **App repo** | [`dreamcraft17/dova`](https://github.com/dreamcraft17/dova) → local `dova/` |
 | **This wiki** | `dova-company-wiki/` (**canonical** for DOVA docs) |
 | **Company wiki mirror** | `company-wiki/docs/products/dova/` |
@@ -47,7 +47,7 @@ Details: [SYNC.md](./SYNC.md).
 
 This wiki is **team-shareable** (product, QA, PRD, runbooks).
 
-Compensation, equity, and personal negotiation docs are **not** in this repo. They live in DN Tech `company-wiki/docs/products/dova/private/`.
+Personal or compensation documents are **not** in this repo.
 
 ## Layout
 

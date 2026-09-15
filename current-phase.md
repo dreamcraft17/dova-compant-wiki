@@ -6,11 +6,11 @@
 | **Repository** | [`dreamcraft17/dova`](https://github.com/dreamcraft17/dova) |
 | **HEAD** | `9e37a8a` · **Tag:** `v0.5.4` (+ unreleased hardening) |
 | **Document date** | 28 August 2026 |
-| **Owner** | Dozer |
+| **Author** | Dozer · [@dreamcraft17](https://github.com/dreamcraft17) |
 | **Phase** | **Production live — post-launch UX hardening** |
 
 > **Release audit:** [docs/DOVA-RELEASE-READINESS-AUDIT.md](./docs/DOVA-RELEASE-READINESS-AUDIT.md)  
-> **Fitur lengkap:** [docs/FEATURE-CATALOG.md](./docs/FEATURE-CATALOG.md)
+> **Full feature catalog:** [docs/FEATURE-CATALOG.md](./docs/FEATURE-CATALOG.md)
 
 ---
 
@@ -50,4 +50,4 @@ Log: [docs/SMOKE-PRODUCTION-RESULT.md](./docs/SMOKE-PRODUCTION-RESULT.md)
 
 ---
 
-*Last updated: 28 August 2026 · Author: Dozer*
+*Last updated: 28 August 2026 · **Author:** Dozer · [@dreamcraft17](https://github.com/dreamcraft17)*

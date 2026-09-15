@@ -1,6 +1,6 @@
 # DOVA — Test Cases
 
-**Author:** Dozer (@dreamraft17) - Software Engineer  
+**Author:** Dozer · [@dreamcraft17](https://github.com/dreamcraft17)  
 **Updated:** August 2026  
 **Automated:** `npm run test` — **151 tests** · `npm run smoke:production` (29 API steps + 10 negative) · `npm run smoke:week4`  
 **QA workflow:** see [GUIDE.md](./GUIDE.md)  

@@ -4,15 +4,14 @@
 **Market**: NGN · Paystack  
 **Repository**: [`dreamcraft17/dova`](https://github.com/dreamcraft17/dova)  
 **Status**: MVP complete · **production live** · post-launch hardening  
-**Owner**: Dozer  
-**Company**: DN Tech  
+**Author**: Dozer · [@dreamcraft17](https://github.com/dreamcraft17)  
 **UpdatedAt**: August 28, 2026  
 **App HEAD**: `9e37a8a` · **Tag:** `v0.5.4` (+ unreleased)
 
 **Canonical wiki:** workspace folder `dova-company-wiki/`  
 **Mirrors:** this path (`company-wiki/docs/products/dova/`) · `dova/docs/` (local, gitignored)
 
-> **Start here:** [FEATURE-CATALOG.md](./docs/FEATURE-CATALOG.md) · [STATUS-LENGKAP.md](./docs/STATUS-LENGKAP.md) · [current-phase.md](./current-phase.md)  
+> **Start here:** [FEATURE-CATALOG.md](./docs/FEATURE-CATALOG.md) · [FULL-TECH-STATUS.md](./docs/FULL-TECH-STATUS.md) · [current-phase.md](./current-phase.md)  
 > **BD:** [docs/PHASE-UPDATE-BD.md](./docs/PHASE-UPDATE-BD.md) · **CEO:** [docs/CEO-PROGRESS-UPDATE.md](./docs/CEO-PROGRESS-UPDATE.md)  
 > **Baseline:** [docs/CURRENT-IMPLEMENTATION.md](./docs/CURRENT-IMPLEMENTATION.md)  
 > **Specs:** [PRD/](./PRD/)  
@@ -25,19 +24,19 @@
 
 ## Living docs (`docs/`)
 
-| File | Deskripsi |
-|------|-----------|
-| [FEATURE-CATALOG.md](./docs/FEATURE-CATALOG.md) | **Inventaris fitur lengkap** — semua modul production (Aug 2026) |
-| [STATUS-LENGKAP.md](./docs/STATUS-LENGKAP.md) | Dokumen status teknis lengkap |
+| File | Description |
+|------|-------------|
+| [FEATURE-CATALOG.md](./docs/FEATURE-CATALOG.md) | **Complete feature inventory** — all production modules (Aug 2026) |
+| [FULL-TECH-STATUS.md](./docs/FULL-TECH-STATUS.md) | Full technical status document |
 | [CURRENT-IMPLEMENTATION.md](./docs/CURRENT-IMPLEMENTATION.md) | Baseline codebase vs ops |
-| [DOVA-BUG-TRIAGE.md](./docs/DOVA-BUG-TRIAGE.md) | Bug triage semua modul + fingerprint |
-| [CHANGELOG.md](./docs/CHANGELOG.md) | Riwayat versi |
-| [PHASE-UPDATE-BD.md](./docs/PHASE-UPDATE-BD.md) | Kirim ke BD / non-teknis |
-| [CEO-PROGRESS-UPDATE.md](./docs/CEO-PROGRESS-UPDATE.md) | Kirim ke CEO |
-| [MVP-PROGRESS-UPDATE.md](./docs/MVP-PROGRESS-UPDATE.md) | Update non-teknis (legacy) |
-| [MVP-STATUS.md](./docs/MVP-STATUS.md) | Status report stakeholder |
+| [DOVA-BUG-TRIAGE.md](./docs/DOVA-BUG-TRIAGE.md) | Bug triage all modules + fingerprints |
+| [CHANGELOG.md](./docs/CHANGELOG.md) | Version history |
+| [PHASE-UPDATE-BD.md](./docs/PHASE-UPDATE-BD.md) | BD / non-technical update |
+| [CEO-PROGRESS-UPDATE.md](./docs/CEO-PROGRESS-UPDATE.md) | CEO update |
+| [MVP-PROGRESS-UPDATE.md](./docs/MVP-PROGRESS-UPDATE.md) | Non-technical update (legacy) |
+| [MVP-STATUS.md](./docs/MVP-STATUS.md) | Stakeholder status report |
 | [SPEC-COMPLIANCE.md](./docs/SPEC-COMPLIANCE.md) | PRD/SRS/SDD vs code |
-| [API.md](./docs/API.md) | Referensi API MVP |
+| [API.md](./docs/API.md) | MVP API reference |
 | [DOVA-API-QA-POSTMAN.md](./docs/DOVA-API-QA-POSTMAN.md) | API endpoint list for QA |
 | [DOVA-RELEASE-READINESS-AUDIT.md](./docs/DOVA-RELEASE-READINESS-AUDIT.md) | Release audit |
 | [SMOKE-PRODUCTION-RESULT.md](./docs/SMOKE-PRODUCTION-RESULT.md) | Production smoke log |
@@ -47,8 +46,8 @@
 | [RUNBOOK.md](./docs/RUNBOOK.md) | Deploy, rollback |
 | [VPS-DEPLOY.md](./docs/VPS-DEPLOY.md) | Single-server deploy |
 | [VERCEL-DEPLOYMENT-OVERRIDE.md](./docs/VERCEL-DEPLOYMENT-OVERRIDE.md) | Vercel override |
-| [DEMO-ACCOUNTS.md](./docs/DEMO-ACCOUNTS.md) | Akun demo seed |
-| [BUG_FIXES.md](./docs/BUG_FIXES.md) | Log bugfix |
+| [DEMO-ACCOUNTS.md](./docs/DEMO-ACCOUNTS.md) | Demo seed accounts |
+| [BUG_FIXES.md](./docs/BUG_FIXES.md) | Bugfix log |
 | [REPLY-PAYSTACK-AND-MIN-ORDER.md](./docs/REPLY-PAYSTACK-AND-MIN-ORDER.md) | Stakeholder reply |
 | [REPLY-SUPPLIER-VERIFICATION-DOCS.md](./docs/REPLY-SUPPLIER-VERIFICATION-DOCS.md) | Stakeholder reply |
 
@@ -67,14 +66,6 @@
 | File | Topic |
 |------|-------|
 | [current-phase.md](./current-phase.md) | Production live + hardening |
-
-## Private (DN Tech / Dozer)
-
-> Not in `dova-company-wiki`. Do not copy these files into the DOVA team wiki.
-
-| File | Isi |
-|------|-----|
-| [private/README.md](./private/README.md) | Index — equity, counter-proposal, launch budget |
 
 ---
 
@@ -97,4 +88,4 @@
 
 ---
 
-*Last Updated: August 28, 2026 · Author: Dozer*
+*Last Updated: August 28, 2026 · **Author:** Dozer · [@dreamcraft17](https://github.com/dreamcraft17)*

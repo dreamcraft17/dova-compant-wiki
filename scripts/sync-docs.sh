@@ -58,41 +58,6 @@ copy_file() {
   echo "  ✓ $(basename "$src") → $dest"
 }
 
-# DN Tech-only private docs live in company-wiki/.../dova/private/
-# (excluded from rsync). Re-attach the index pointer after team-wiki sync.
-restore_company_private_index() {
-  local index="$COMPANY_MIRROR/00_INDEX.md"
-  if [[ ! -f "$index" ]]; then
-    return 0
-  fi
-  if grep -q 'Private (DN Tech / Dozer)' "$index"; then
-    return 0
-  fi
-  python3 - "$index" <<'PY'
-from pathlib import Path
-import sys
-p = Path(sys.argv[1])
-text = p.read_text()
-block = """
-## Private (DN Tech / Dozer)
-
-> Not in `dova-company-wiki`. Do not copy these files into the DOVA team wiki.
-
-| File | Isi |
-|------|-----|
-| [private/README.md](./private/README.md) | Index — equity, counter-proposal, launch budget |
-
-"""
-needle = "## Notes\n"
-if needle in text:
-    text = text.replace(needle, block + needle, 1)
-else:
-    text = text.rstrip() + "\n" + block
-p.write_text(text)
-PY
-  echo "  ✓ restored private/ pointer in company-wiki 00_INDEX.md"
-}
-
 sync_wiki_tree_to_company() {
   echo "→ Mirror wiki → company-wiki/docs/products/dova/"
   rsync -a --delete \
@@ -109,7 +74,6 @@ sync_wiki_tree_to_company() {
     cp "$WIKI_ROOT/PRODUCT.md" "$COMPANY_MIRROR/README.md"
     echo "  ✓ PRODUCT.md → company-wiki .../README.md"
   fi
-  restore_company_private_index
   echo "  ✓ company-wiki mirror updated"
 }
 

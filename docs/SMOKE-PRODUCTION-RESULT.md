@@ -1,6 +1,6 @@
 # DOVA — Production Smoke Result
 
-> **Author:** Dozer · **Date:** 2026-08-27 · **HEAD:** `b17e2a5` · **Tag:** `v0.5.2`  
+> **Author:** Dozer · [@dreamcraft17](https://github.com/dreamcraft17) · **Date:** 2026-08-27 · **HEAD:** `b17e2a5` · **Tag:** `v0.5.2`  
 > **Environment:** **Production** — `dova.dntech.id` / `api.dova.dntech.id`
 
 **Command:** `npm run smoke:production`  

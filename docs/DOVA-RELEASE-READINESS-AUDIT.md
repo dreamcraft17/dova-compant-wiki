@@ -1,6 +1,6 @@
 # DOVA — Release Readiness Audit
 
-> **Status:** Production live · **Last updated:** 2026-08-27 · **Author:** Dozer  
+> **Status:** Production live · **Last updated:** 2026-08-27 · **Author:** Dozer · [@dreamcraft17](https://github.com/dreamcraft17)  
 > **App HEAD:** `8fb5b5e` · **Tag:** `v0.5.2` · **Launch:** Production — 27 Aug 2026  
 > **Scope:** QA review · bug triage · backend assessment · go/no-go gates
 

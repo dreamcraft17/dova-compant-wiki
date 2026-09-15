@@ -1,6 +1,6 @@
 # DOVA — API Endpoint List for QA (Postman / Insomnia)
 
-> **Status:** Active · **Last updated:** 2026-08-27 · **Author:** Dozer  
+> **Status:** Active · **Last updated:** 2026-08-27 · **Author:** Dozer · [@dreamcraft17](https://github.com/dreamcraft17)  
 > **Base path:** `/api/v1` · **Source:** `apps/backend/src/app.controller.ts` (HEAD `fc177d6`)
 
 This document is for **manual API testing** by QA — Postman, Insomnia, Bruno, or `curl`. For UI/UAT scenarios, see [TEST-CASES.md](./TEST-CASES.md).
